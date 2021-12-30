@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, ScrollView, FlatList } from 'react-native'
 // import ChatBox from '../ChatBox/ChatBox'
 
 const ChatShow = () => {
+
     const [chatList, setChatList] = useState([])
 
     useEffect(() => {
@@ -10,11 +11,11 @@ const ChatShow = () => {
             .then(res => res.json())
             .then(data => setChatList(data.data))
     }, [chatList])
+
     return (
         <View style={styles.chatList}>
             <FlatList
                 showsVerticalScrollIndicator={false}
-                // contentContainerStyle={{ height: 400 }}
                 data={chatList}
                 renderItem={({ item }) => (
                     <View style={{ alignSelf: 'flex-end' }}>
@@ -36,9 +37,9 @@ const styles = StyleSheet.create({
         textAlign: 'right',
         // display: 'inline'
     },
-    chatList:{
+    chatList: {
         marginTop: 220,
-        bottom:220,
+        bottom: 220,
         // backgroundColor: '#242526'
     }
 })

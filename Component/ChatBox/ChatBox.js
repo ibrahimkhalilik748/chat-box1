@@ -1,7 +1,6 @@
 import React, { Component, useState } from 'react';
 import { StyleSheet, Text, TextInput, View, SafeAreaView, Button, TextInputField } from 'react-native';
 import { useForm, Controller } from 'react-hook-form';
-import ChatShow from '../ChatShow/ChatShow';
 
 
 export default function ChatBox() {

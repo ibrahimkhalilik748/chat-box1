@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text, View, Dimensions, SafeAreaView } from 'react-native';
+import { StyleSheet, Text, View, Dimensions, SafeAreaView } from 'react-native';
 import ChatBox from './Component/ChatBox/ChatBox';
 import ChatShow from './Component/ChatShow/ChatShow';
 
